@@ -24,11 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Alex Huang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
   location         : "Chandler, AZ"
   employer         : "Hamilton High School"
   uri              : # URL
-  email            : "alexahuanga1029@gmail.com" 
+  email            : alexahuanga1029@gmail.com
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
