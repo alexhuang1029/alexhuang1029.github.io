@@ -9,14 +9,12 @@ redirect_from:
 
 Hello! Nice to meet you!
 
-My name is Alex Huang. I am currently a senior at [Hamilton High School](cusd80.com/hhs) in Chandler, AZ. 
+My name is Alex Huang. I am currently a freshman studying Electrical Engineering at [The University of Texas at Dallas](utdallas.edu) in Richardson, TX. 
 I grew up in Hsinchu, Taiwan, before moving to the US at age 7. 
 
-Some academic interests of mine are AI/Machine Learning research, computer science, FIRST Robotics, and math/engineering.
+Some academic interests of mine are applied AI/ML research for robotics,  FIRST Robotics, and math/engineering.
 
-I hope to pursue an Electrical Engineering degree in college!
-
-In my free time, I love to hike/travel, cook, play piano/violin/guitar, and work at a senior home.
+In my free time, I love to hike, travel, cook, and play piano/violin/guitar. 
 
 A data-driven personal website
 ======
