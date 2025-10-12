@@ -36,7 +36,6 @@ Tony Stark was right - teleoperation (the remote control of robotic devices) is 
 Specifically, the demand for robotic devices that mimic the dexterity and manipulative abilities of our biggest blessing—our human hand and fingers—will appreciate incredibly in the upcoming years. But for now, the effectiveness of robotic teleoperation limited by several factors, including: 
 * The high costs and limitations of the current methods for teleoperation, like: 
     * High-end 4D motion-tracking camera systems like the __Vicon Valkyrie VK26 system__, which costs more than $10,000 per setup. 
-        * Individual metallic sensors need to be placed on the subject/hand, which increase the invasiveness and complexity involved of such procedures for teleoperation.
     * Finger-tracking sensor gloves, like the __Manus Prime X__ ($5,000+) and __CyberGlove II__ ($10,000+) further increase expenses.
     * __Intel RealSense Depth Cameras__ (and Google MediaPipe landmark tracking) - $600+. 
         * This method is also prone to vision occlusion, where the camera cannot calculate the joint angles of a hand not directly facing the camera.
@@ -44,10 +43,19 @@ Specifically, the demand for robotic devices that mimic the dexterity and manipu
 
 <div style="border-left: 6px solid #208c02ff; background-color: #e1eddeff; padding: 1em; margin: 1em 0;">
   <strong>Therefore, we present THETA, a novel, cost effective method for the teleoperation of a dexterous robotic hand.</strong> 
-    Through multi-view ("triangulated") camera tracking, image analysis, and reinforcement learning, THETA's 3-camera pipeline estimates the joint angles for the 15 finger joints in a human hand—all for an extremely cost-effective $45 per setup (for three 1080p web cameras.)
+    Through multi-view ("triangulated") camera tracking, image analysis, and reinforcement learning, THETA's 3-camera pipeline estimates the joint angles for the 15 finger joints in a human hand—all for an extremely cost-effective $45 per setup (for three $15 1080p web cameras.)
 </div>
 
 <!-- __Therefore, we present THETA, a novel, cost effective method for the teleoperation of a dexterous robotic hand.__ Through multi-view ("triangulated") camera tracking, image analysis, and reinforcement learning, THETA's 3-camera pipeline estimates the joint angles for the 15 finger joints in a human hand—all for an extremely cost-effective $45 per setup (for three 1080p web cameras.) -->
+
+<div style="text-align: center; margin: 1.5em 0;">
+  <img src="/images/portfolio/theta/demo.gif" 
+       alt="THETA pipeline demo" 
+       style="width: 60%; max-width: 600px; border-radius: 10px;">
+  <p style="font-size: 0.9em; color: #555;">THETA pipeline demo
+  <a href="https://imgflip.com/gif/a8uivn">(GIF not playing?)</a>
+  </p>
+</div>
 
 <h2 id="video">Quick Video Summary</h2>
 <p>Video submission for participation in the 2025 International Science and Engineering Fair...</p>
