@@ -4,7 +4,7 @@ date: "May 15, 2025"
 excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/portfolio/theta/logo.png' width='350px'>"
 collection: portfolio
 ---
-__Reading time: 6 min__
+__Reading time: 10 min__
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
@@ -19,7 +19,7 @@ __Reading time: 6 min__
 </div>
 
 
-Tony Stark was right - teleoperation (the remote control of robotic devices) is truly the future. 
+Tony Stark was right—teleoperation (the remote control of robotic devices) is truly the future. 
 
 <div style="display: flex; justify-content: center; width: 100%;">
   <div class="tenor-gif-embed"
