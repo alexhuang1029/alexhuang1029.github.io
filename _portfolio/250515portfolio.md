@@ -99,6 +99,69 @@ __1. Robotic Hand Development & ROS2 Control__
 
 __2. Multi-View Data Collection & Annotation__
 
+* A [gesture joint angles ground truth dataset](https://drive.google.com/file/d/1cvmBKoHwGXdxwPT7tW2Ufd-ZZP5Q1pcT/view?usp=sharing) was used to train the RL pipeline. 
+    * 15 features (15 joint angles of fingers) across 40 distinct hand gestures measured manually with a protractor. In each finger: 
+      * Metacarpophalangeal (MCP) joint: flexion/extension, abduction/adduction at the knuckle.
+      * Proximal Interphalangeal (PIP) joint: mid-finger bending.
+      * Distal Interphalangeal (DIP) joint: fingertip actuation.
+      
+      |     Gesture Id    |     Gesture Name    |     Index MCP Angle |     Index PIP Angle |     Index DIP Angle |     Middle MCP Angle |
+      |-------------------|---------------------|---------------------|---------------------|---------------------|----------------------|
+      |     1             |     Closed Fist     |     90 (±5°)        |     90 (±5°)        |     110 (±5°)       |     90 (±5°)         |
+      |     2             |     Open Palm       |     180 (±5°)       |     180 (±5°)       |     180 (±5°)       |     180 (±5°)        |
+      |     3             |     Number One      |     180 (±5°)       |     180 (±5°)       |     180 (±5°)       |     90 (±5°)         |
+<br>    
+<div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <img src="/images/portfolio/theta/fig5.png" 
+         alt="Constructed & modified" 
+         style="max-height: 300px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Joint data collection diagram.</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="/images/portfolio/theta/fig6.png" 
+         alt="Fingertip flexion" 
+         style="max-height: 300px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Triangulation (multi-view) data collection setup.</p>
+  </div>
+</div>
+
+  * The phalanges, knuckle joints, and metacarpal bones fastened w/ 80-lb fishing line and 2mm springs.
+    * 3x Emax ES3352 12.4g mini servos and spring actuates each finger.
+        * 2x servos for abduction/adduction and finger base flexion.
+        * 1x servo for fingertip flexion.
+    * 1 spring for fingertip (distal) and base (proximal) extension.
+
+<br>
+<div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+  <div style="text-align: center;">
+    <img src="/images/portfolio/theta/fig2.png" 
+         alt="Constructed & modified" 
+         style="max-height: 400px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Constructed & modified DexHand.</p>
+  </div>
+  <div style="text-align: center; max-width: 300px;">
+    <img src="/images/portfolio/theta/fig3.png" 
+         alt="Fingertip flexion" 
+         style="max-height: 400px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Fingertip flexion by pulling on ligament. Sprint (tip extension) circled.</p>
+  </div>
+</div>
+* To control the DexHand: 
+    * Ubuntu VM w/ USB passthrough used as ROS2 environment.
+    * The Arduino pipeline relied on two main ROS2 nodes to faciliate robotic hand movement. 
+        * High-level commands converted into serial messages which Arduino interprets to control robotic hand servos.
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/theta/fig4.png" 
+         alt="Caption for Fig 4" 
+         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      ROS 2-Arduino Joint Angle Transmission pipeline for robotic hand servos actuation.
+    </p>
+  </div>
+</div>
+
 __3. Segmentation Preprocessing & THETA Joint Angle Classification__
 
 __4. THETA Joint Angle Prediction & Real-Time Inference__
