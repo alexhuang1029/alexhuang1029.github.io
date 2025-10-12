@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,17 +8,20 @@ redirect_from:
 ---
 
 {% include base_path %}
+[Click here for PDF Version](files/Resume101125.pdf)
+
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Electrical Engineering, University of Texas at Dallas, 2029 (expected)
+  * GPA: 4.0/4.0
+* HS Diploma, Hamilton High School (Chandler, AZ), 2025 - Summa Cum Laude
+  * GPA: 4.0/4.0
 
-Work experience
+Relevant Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
+* 08/25 - Present: Robotics Research Assistant
+  * IRVL ([Intelligent Robotics and Vision Lab](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://labs.utdallas.edu/irvl/&ved=2ahUKEwi6stTgwp2QAxWyL1kFHb8mL88QFnoECAwQAQ&usg=AOvVaw1zrwUEGjprGkUaoCb-__YH])),  University of Texas at Dallas
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
