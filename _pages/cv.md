@@ -8,32 +8,51 @@ redirect_from:
 ---
 
 {% include base_path %}
-<a href="http://alexhuang1029.github.io/files/Resume.pdf" target="_blank">Click here for PDF Version </a>
+<a href="http://alexhuang1029.github.io/files/Resume.pdf" target="_blank">Click here for full PDF Version </a>
 
 
 Education
 ======
 * B.S. in Electrical Engineering, University of Texas at Dallas, 2029 (expected)
   * GPA: 4.0/4.0
+  * Relevant Coursework:
+    * Multivariable Calculus
+    * Differential Equations
+    * Linear Algebra
 * HS Diploma, Hamilton High School (Chandler, AZ), 2025 - Summa Cum Laude
   * GPA: 4.0/4.0
 
 Relevant Experience
 ======
-* 08/25 - Present: Robotics Research Assistant
+* 08/25 - Present: __Robotics Research Assistant__
   * IRVL ([Intelligent Robotics and Vision Lab](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://labs.utdallas.edu/irvl/&ved=2ahUKEwi6stTgwp2QAxWyL1kFHb8mL88QFnoECAwQAQ&usg=AOvVaw1zrwUEGjprGkUaoCb-__YH])),  University of Texas at Dallas
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * Github University
+* 09/24 - 07/25: __Intelligent Robot Dynamics & Actuators Intern__
+  * [Sun Robotics Lab]("https://sunrobotics.lab.asu.edu/"), Arizona State University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 06/24 - 08/24: __STEM2SHTEM Summer Research Intern__
+  * [Data Compression Forum]("https://compression.stanford.edu/"), Stanford University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
+* 05/24 - 07/24: __Cybersecurity & Software Engineering Intern__
+  * SEFCOM ([Laboratory of Security Engineering for Future Computing]("https://sefcom.asu.edu/")), Arizona State University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
+* 11/23 - 06/25: __Restaurant Server__
+  * Ocotillo Gardens Senior Living, Spectrum Retirement
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+
+* 07/23 - 08/23: __Bilingual English Teacher & Volunteer__
+  * [English Teaching Service Program for Overseas Youth]("https://www.ocac.gov.tw/OCAC/Eng/Pages/List.aspx?nodeid=7849"), Taiwan Overseas Community Affairs Council
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
   
 Skills
 ======
