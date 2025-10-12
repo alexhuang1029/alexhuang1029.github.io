@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Click here for PDF Version](files/Resume101125.pdf)
+(<a href="https://github.com/alexhuang1029/alexhuang1029.github.io/blob/working/files/Resume.pdf" target="_blank">Click here for PDF Version)
 
 
 Education
