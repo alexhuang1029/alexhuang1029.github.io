@@ -1,6 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Portfolio item number 3"
+date: "August 15, 2025"
+excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
