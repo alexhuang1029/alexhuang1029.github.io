@@ -7,7 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 <a href="http://alexhuang1029.github.io/files/Alex S. Huang - Resume.pdf" target="_blank">Click here for full PDF Version</a>
 
 
