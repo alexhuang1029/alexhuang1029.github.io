@@ -1,7 +1,7 @@
 ---
 title: "THETA: Triangulated Hand-State Estimation for Teleoperation and Automation in Robotic Hand Control"
 date: "May 15, 2025"
-excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/portfolio/theta/logo.png' width='350px'>"
+excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/portfolio/theta/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
 ---
 __Reading time: 12 min__
