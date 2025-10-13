@@ -7,6 +7,7 @@ redirect_from:
   - /resume
 ---
 
+{% include base_path %}
 <a href="http://alexhuang1029.github.io/files/Alex S. Huang - Resume.pdf" target="_blank">Click here for full PDF Version</a>
 
 
@@ -24,22 +25,22 @@ Education
 Relevant Experience
 ======
 * 08/25 - Present: __Robotics Research Assistant__
-  * IRVL ([Intelligent Robotics and Vision Lab](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://labs.utdallas.edu/irvl/&ved=2ahUKEwi6stTgwp2QAxWyL1kFHb8mL88QFnoECAwQAQ&usg=AOvVaw1zrwUEGjprGkUaoCb-__YH])),  University of Texas at Dallas
+  * IRVL ([Intelligent Robotics and Vision Lab](https://labs.utdallas.edu/irvl/)),  University of Texas at Dallas
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
 * 09/24 - 07/25: __Intelligent Robot Dynamics & Actuators Intern__
-  * [Sun Robotics Lab]("https://sunrobotics.lab.asu.edu/"), Arizona State University
+  * [Sun Robotics Lab](https://sunrobotics.lab.asu.edu/), Arizona State University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
 * 06/24 - 08/24: __STEM2SHTEM Summer Research Intern__
-  * [Data Compression Forum]("https://compression.stanford.edu/"), Stanford University
+  * [Data Compression Forum](https://compression.stanford.edu/), Stanford University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
 * 05/24 - 07/24: __Cybersecurity & Software Engineering Intern__
-  * SEFCOM ([Laboratory of Security Engineering for Future Computing]("https://sefcom.asu.edu/")), Arizona State University
+  * SEFCOM ([Laboratory of Security Engineering for Future Computing](https://sefcom.asu.edu/)), Arizona State University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
 
@@ -49,7 +50,7 @@ Relevant Experience
   * Supervisor: Professor Hub
 
 * 07/23 - 08/23: __Bilingual English Teacher & Volunteer__
-  * [English Teaching Service Program for Overseas Youth]("https://www.ocac.gov.tw/OCAC/Eng/Pages/List.aspx?nodeid=7849"), Taiwan Overseas Community Affairs Council
+  * [English Teaching Service Program for Overseas Youth](https://www.ocac.gov.tw/OCAC/Eng/Pages/List.aspx?nodeid=7849), Taiwan Overseas Community Affairs Council
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
   

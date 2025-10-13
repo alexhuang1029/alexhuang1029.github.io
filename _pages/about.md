@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! Nice to meet you!
 
-My name is Alex Huang. I am currently a freshman studying Electrical Engineering at [The University of Texas at Dallas](www.utdallas.edu) in Richardson, TX. 
+My name is Alex Huang. I am currently a freshman studying Electrical Engineering at [The University of Texas at Dallas](https://utdallas.edu) in Richardson, TX. 
 I grew up in Taiwan before moving to the US at age 7. 
 
 Some academic interests of mine are applied AI/ML research for robotics,  FIRST Robotics, and math/engineering.
