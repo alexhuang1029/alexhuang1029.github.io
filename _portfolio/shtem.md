@@ -1,7 +1,7 @@
 ---
 title: "Optimizing Large Language Models: Learning from Mistakes in Gameplay"
 date: "August 19, 2024"
-excerpt: "Who knew tic-tac-toe could be so difficult...<br/><img src='/images/portfolio/shtem/logo.png' width='350px' style='border-radius: 14px;'>"
+excerpt: "How can tic-tac-toe be so difficult...<br/><img src='/images/portfolio/shtem/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
 ---
 
