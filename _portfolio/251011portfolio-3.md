@@ -23,6 +23,13 @@ __Reading time: 3 min__
 __"FREE MINECRAFT DOWNLOAD". "Your Car's warranty has expired." "Congratulations! You have just won a free iPhone!".__ All of these are scams that Internet users—especially those less tech-literate—often fall for.
 
 <iframe src="https://alexhuang1029.notion.site/ebd/3ab5c28d18d84a8782ab54dc1740a5ab?v=4de03a8a358f4ed984a3c1b98d4c5bfe" width="800" height="800" frameborder="0" allowfullscreen></iframe>
+<p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
+  <a href="https://alexhuang1029.notion.site/ebd/3ab5c28d18d84a8782ab54dc1740a5ab?v=4de03a8a358f4ed984a3c1b98d4c5bfe" 
+     target="_blank" 
+     style="color: #007BFF; text-decoration: underline;">
+    View original website in a separate window
+  </a>
+</p>
 
 <h2 id="poster">Summary Poster</h2>
 <p>Presented at the 2024 SEFCOM High School Internship cumulative poster session.</p>
