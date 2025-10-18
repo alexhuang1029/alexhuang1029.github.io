@@ -1,53 +1,87 @@
 ---
-title: "NeuroTrace: A Novel Machine-Powered System to Detect Neurodegeneration through Handwriting Kinematics Analysis"
-date: "March 30, 2024"
-excerpt: "Could this be the 'write' approach?<br/><img src='/images/portfolio/neurotrace/logo.png' width='350px' style='border-radius: 14px;'>"
+title: "Improving the Zero-Shot Generalizability of Vision-Language-Action models with Kochv1.1 and SO-101 Grippers"
+date: "October 1, 2025"
+excerpt: "What I'm currently working on...<br/><img src='/images/portfolio/koch/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
 read_time: 10
 ---
-
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
-  <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
-  <a href="https://www.linkedin.com/in/zoe-girley-806a1a303/" style="color: #007BFF; text-decoration: underline;"></a>
+  <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, in collaboration with 
+  <a href="https://www.labs.utdallas.edu/irvl" style="color: #007BFF; text-decoration: underline;">IRVL Lab</a> at UT Dallas.
 </div>
 
 <div style="border-left: 6px solid #007BFF; background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
   <strong>TLDR (Too long, didn't/don't wanna read)?:</strong> 
-  <a href="#poster" style="color: #007BFF; text-decoration: underline;">
-    Jump to the summary poster here.
+  <a href="#video" style="color: #007BFF; text-decoration: underline;">
+    Jump to the video here.
   </a>
 </div>
-<div style="border-left: 6px solid #fa3a00ff; background-color: #fddfdbff; padding: 1em; margin: 1em 0;">
+
+<!-- <div style="border-left: 6px solid #fa3a00ff; background-color: #fddfdbff; padding: 1em; margin: 1em 0;">
   <strong>Curious about the code? </strong> 
-  <a href="https://www.github.com/alexhuang1029/NeuroTrace" style="color: #007BFF; text-decoration: underline;">
+  <a href="https://www.github.com/SmokyFish/THETA" style="color: #007BFF; text-decoration: underline;">
     Access the GitHub here.
   </a>
+</div> -->
+
+Current Progress
+---
+
+This project aims to explore how we can improve the generalization ability of policies for robotic devices like the [Kochv1.1](https://github.com/jess-moss/koch-v1-1) or [SO-101](https://github.com/TheRobotStudio/SO-ARM100), both grippers optimized for object grasping and manipulation.
+
+10-1-25: Installed LeRobot, conda, and necesary packages for calibration and motor setup.
+
+10-8-25: Successfully set up teleoperation and cable management. 
+
+10-17-25: Working on implementing OpenCV for AprilTag detection (transformation matrices determination) first, and then image collection for the imitation learning.
+
+<!--
+<div style="display: flex; justify-content: center; width: 100%;">
+  <div class="tenor-gif-embed"
+       data-postid="22121327"
+       data-share-method="host"
+       data-aspect-ratio="1.78771"
+       data-width="60%">
+    <a href="https://tenor.com/view/i-am-iron-man-gif-22121327">I Am Iron Man GIF</a>
+    from <a href="https://tenor.com/search/i+am+iron+man-gifs">I Am Iron Man GIFs</a>
+  </div>
+</div>
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<br>
+Specifically, the demand for robotic devices that mimic the dexterity and manipulative abilities of our biggest blessing—our human hand and fingers—will appreciate incredibly in the upcoming years. But for now, the effectiveness of robotic teleoperation limited by several factors, including: 
+* The high costs and limitations of the current methods for teleoperation, like: 
+    * High-end 4D motion-tracking camera systems like the __Vicon Valkyrie VK26 system__, which costs more than $10,000 per setup. 
+    * Finger-tracking sensor gloves, like the __Manus Prime X__ ($5,000+) and __CyberGlove II__ ($10,000+) further increase expenses.
+    * __Intel RealSense Depth Cameras__ (and Google MediaPipe landmark tracking) - $600+. 
+        * This method is also prone to vision occlusion, where the camera cannot calculate the joint angles of a hand not directly facing the camera.
+* As well as the difficult setups of these (and other) methods, highlighting the inconvenience for the average consumer.
+
+<div style="border-left: 6px solid #208c02ff; background-color: #e1eddeff; padding: 1em; margin: 1em 0;">
+  <strong>Therefore, we present THETA, a novel, cost effective method for the teleoperation of a dexterous robotic hand.</strong> 
+    Through multi-view ("triangulated") camera tracking, image analysis, and reinforcement learning, THETA's 3-camera pipeline estimates the joint angles for the 15 finger joints in a human hand—all for an extremely cost-effective $45 per setup (for three $15 1080p web cameras.)
 </div>
 
 
-__Neurodegenerative diseases (NDs), like Parkinson's and Alzheimer's, affect more than 62 million people worldwide, especially seniors.__ Most NDs share the common pattern of damaging the motor system, which leads to the loss of hand control. Hand motions can become segmented and jagged, and daily activities, like writing, can be seriously affected.
-
-<div style="border-left: 6px solid #208c02ff; background-color: #e1eddeff; padding: 1em; margin: 1em 0;">
-  <strong>NeuroTrace is a low-cost, non-invasive screening tool that utilizes handwriting kinematics and machine learning to identify the early signs that indicate neurodegenerative disorders. </strong> 
-    Through a WACOM drawing tablet, a lightweight HTML webpage and a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html" 
-    style= "color: #007BFF;">Random Forest classification backend</a>, NeuroTrace is an effective remote diagnostic and medical monitor to reduce the troubles that neurodegenerative diseases—before they become serious.
+<div style="text-align: center; margin: 1.5em 0;">
+  <img src="/images/portfolio/theta/demo.gif" 
+       alt="THETA pipeline demo" 
+       style="width: 60%; max-width: 600px; border-radius: 10px;">
+  <p style="font-size: 0.9em; color: #555;">THETA pipeline demo
+  <a href="https://imgflip.com/gif/a8uivn">(GIF not playing?)</a>
+  </p>
 </div>
 
 Experimental Design & Methodology
 ---
-__1. Dataset Preparation__
-* The training handwritten dataset (n=174) used was the [DARWIN dataset](https://archive.ics.uci.edu/dataset/732/darwin) from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/). 
-    * There were 25 tasks for handwriting and 18 metrics produced from each task (avg. speed, acceleration, jerk, pressure in x,y,z, etc).
-    * Unnecessary tasks and metrics were removed using the _feature_importance_ function in _scikit-learn_.
-    * 6 out of the 25 original handwriting tasks in DARWIN were chosen for training and testing, based on the most distinctive features (line, circle, cursive, etc):
-      * Test 1: Tracing horizontal lines
-      * Test 2: Tracing vertical lines
-      * Test 3: Tracing a large circle (6cm)
-      * Test 4: Tracing a small circle (3cm)
-      * Test 5: Writing l's in cursive
-      * Test 6: Writing la's in cursive
-    * 12 metrics out of the 18 were used to reduce the number of dimensions.
+__1. Robotic Hand Development & ROS2 Control__
+* The constructed hand and wrist mechanism was mostly taken from the [DexHand CAD model](https://github.com/TheRobotStudio/V1.0-Dexhand) by [TheRobotStudio](https://www.youtube.com/@therobotstudio). 
+    * The hand was comprised entirely of 3D-prints, fishing line, bearings, springs, mini servos, and screws.
+    * The phalanges, knuckle joints, and metacarpal bones fastened w/ 80-lb fishing line and 2mm springs.
+    * 3x Emax ES3352 12.4g mini servos and spring actuates each finger.
+        * 2x servos for abduction/adduction and finger base flexion.
+        * 1x servo for fingertip flexion.
+    * 1 spring for fingertip (distal) and base (proximal) extension.
 <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
   <div style="text-align: center;">
     <img src="/images/portfolio/theta/fig2.png" 
@@ -78,12 +112,13 @@ __1. Dataset Preparation__
 </div>
         
 
-__2. Random Forest Model Training & Optimization__
+__2. Multi-View Data Collection & Annotation__
 
-* Scikit-learn's  [__Random Forest Classifier__](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) was used to train the NeuroTrace model. 
-    * The Random Forest classification model was chosen since it overfits less, generalizing well to unseen data.
-      * Inputs: The metrics (features) of each of the 6 tasks of a patient
-      * Outputs: The classification of the patient (healthy/patient), as well as analyzable metrics which are used to tune the model's hyperparameters.
+* A [gesture joint angles ground truth dataset](https://drive.google.com/file/d/1cvmBKoHwGXdxwPT7tW2Ufd-ZZP5Q1pcT/view?usp=sharing) was used to train the ML pipeline. 
+    * 15 features (15 joint angles of fingers) across 40 distinct hand gestures were measured manually with a protractor. In each finger: 
+      * Metacarpophalangeal (MCP) joint: flexion/extension, abduction/adduction at the knuckle.
+      * Proximal Interphalangeal (PIP) joint: mid-finger bending.
+      * Distal Interphalangeal (DIP) joint: fingertip actuation.
     * RGB image capture (640x480p, 30FPS) from all three cameras (hence the triangulation) were synchronized while performing the selected hand gesture (see table). 
       * __In total, more than 48,000 images were captured for the dataset (~1,200 images per gesture).__
       * The corresponding joint angles were recorded, with a ±5-degree error threshold was added to account for any human error in the data collection process.
@@ -233,29 +268,32 @@ __4. THETA Joint Angle Prediction, Real-Time Inference, & Results__
 
 Conclusion
 ---
-__NeuroTrace ensures early neurodegenerative disease detection with a 80%+ accuracy. NeuroTrace ultimately will create a future where the burden of neurodegenerative diseases is alleviated, with implications and applications:__
-* Quick, accurate, and non-invasive screening tool
-* Cost-effective, efficient application for low-resource groups
-* Effective remote diagnostic and medical monitor
-* Useful longitudinal study tool due to its quick & simple tasks
+__THETA’s simple setup and robustness has the potential to increase the accessibility of high-compliant teleoperated robotic hands, with implications for countless real-life fields, such as:__
+* __Household prosthetics__ - improve automation and AI functionalities, especially for those with disabilities or difficult quality-of-life.
+* __Linguistics__ - facilitate remote/automated sign language interpretation and gestures, like ASL (American Sign Language)
+* __Medical field__ - support remote surgical procedures with precise joint angle control systems (once our robotic hands become built with industry standard!)
+* __Inaccessible__ exploration - enable dexterous object manipulation during space missions or rescue missions in inaccessible places.
+* __Manufacturing & agriculture__ - automate precise, perfect grasping and manipulation of consumer goods.
 
 What's next? 
 ---
 As with any good project, there is future research planned:
-* __Multimodal Expansion:__ Combine handwriting with speech or facial expression analysis for higher diagnostic sensitivity.
-* __Personalization:__ Train adaptive models that consider demographic, vocational, and medical background data.
-* __Longitudinal Tracking:__ Utilize NeuroTrace regularly long-term as a checkup tool through repeated handwriting sessions.
-* __Clinical Integration:__ Partner with neurology labs to deploy NeuroTrace as a pre-diagnostic screening application.
+* Develop __adaptive learning models__ that continuously refine and enhance joint angle recognition through weighted user feedback.
+* Optimize deep learning pipelines to __minimize latency__ and boost real-time responsiveness of physical robotic hand.
+* __Integrate LLM reasoning, logic,__ and __image capabilities__ to enhance compliance and awareness for situational contexts.
 
 ---
 
-<h2 id="poster">Summary Poster</h2>
-<p>Presented at the 2024 SEFCOM High School Internship cumulative poster session.</p>
-<iframe width="800" height="1200" src="/images/portfolio/smishsmashing/poster.pdf" frameborder="0" ></iframe>
-<p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
-  <a href="/images/portfolio/smishsmashing/poster.pdf" 
-     target="_blank" 
-     style="color: #007BFF; text-decoration: underline;">
-    Open PDF in a separate window
+{% include base_path %}
+
+<p style="margin-top: 1em;">
+  <a href="http://alexhuang1029.github.io/images/portfolio/theta/poster.pdf" target="_blank">
+    Click here for full PDF Version of the official 48x48 ISEF poster
   </a>
 </p>
+-->
+
+<h2 id="video">Quick Video Summary</h2>
+<p>Regular updates will be posted here.</p>
+
+<iframe width="100" height="100" src="https://www.youtube.com/embed/46fAbrpgdsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

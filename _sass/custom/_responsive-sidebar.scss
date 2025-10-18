@@ -1,0 +1,43 @@
+/* === Responsive Sidebar Override (AcademicPages / Minimal Mistakes) === */
+
+/* Default desktop behavior: keep sticky sidebar */
+.sidebar,
+.page__sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+}
+
+/* Fix parent wrapper: sticky fails if a parent has transform or overflow hidden */
+.page__inner-wrap {
+  overflow: visible !important;
+  transform: none !important;
+}
+
+/* Mobile and narrow window behavior */
+@media screen and (max-width: 900px) {
+  .sidebar,
+  .page__sidebar {
+    position: relative !important; /* remove sticky only on small screens */
+    top: auto !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 1rem 0 0 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Make main content take full width */
+  .page__content,
+  .page__main {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  /* Stack order: content first, sidebar after */
+  .page__content {
+    order: 1;
+  }
+  .page__sidebar {
+    order: 2;
+  }
+}

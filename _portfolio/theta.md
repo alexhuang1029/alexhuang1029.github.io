@@ -8,7 +8,8 @@ read_time: 10
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
-  <a href="https://www.linkedin.com/in/akshay-karthik-a219a7311" style="color: #007BFF; text-decoration: underline;">Akshay Karthik</a>
+  <a href="https://www.linkedin.com/in/akshay-karthik-a219a7311" style="color: #007BFF; text-decoration: underline;">Akshay Karthik</a>, in collaboration with 
+  <a href="https://www.sunrobotics.lab.asu.edu" style="color: #007BFF; text-decoration: underline;">Sun Robotics Lab</a> at ASU.
 </div>
 
 <div style="border-left: 6px solid #007BFF; background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
@@ -17,7 +18,12 @@ read_time: 10
     Jump to the video here.
   </a>
 </div>
-
+<div style="border-left: 6px solid #fa3a00ff; background-color: #fddfdbff; padding: 1em; margin: 1em 0;">
+  <strong>Curious about the code? </strong> 
+  <a href="https://www.github.com/SmokyFishy/THETA" style="color: #007BFF; text-decoration: underline;">
+    Access the GitHub here.
+  </a>
+</div>
 
 Tony Stark was right—teleoperation (the remote control of robotic devices) is truly the future. 
 
