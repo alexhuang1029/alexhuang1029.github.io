@@ -3,9 +3,9 @@ title: "SmishSmashing - A System Software Utilizing LLMs (GPT-4o) to Detect and 
 date: "September 1, 2024"
 excerpt: "Pig butchering... But where's the butcher?<br/><img src='/images/portfolio/smishsmashing/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
+read_time: 10
 ---
 
-__Reading time: 3 min__
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
