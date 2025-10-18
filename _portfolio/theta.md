@@ -3,8 +3,8 @@ title: "THETA: Triangulated Hand-State Estimation for Teleoperation and Automati
 date: "May 15, 2025"
 excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/portfolio/theta/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
+read_time: 10
 ---
-__Reading time: 12 min__
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 

@@ -3,9 +3,9 @@ title: "Optimizing Large Language Models: Learning from Mistakes in Gameplay"
 date: "August 19, 2024"
 excerpt: "How can tic-tac-toe be so difficult...<br/><img src='/images/portfolio/shtem/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
+read_time: 10
 ---
 
-__Reading time: 3 min__
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
