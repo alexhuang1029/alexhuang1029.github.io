@@ -13,7 +13,7 @@ main:
     url: /publications/    
         
   - title: "Resume"
-    url: /cv/
+    url: /resume/
 
   - title: "Blog Posts"
     url: /year-archive/

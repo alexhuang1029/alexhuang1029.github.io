@@ -9,7 +9,8 @@ read_time: 10
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
-  <a href="https://www.linkedin.com/in/zoe-girley-806a1a303/" style="color: #007BFF; text-decoration: underline;">Zoe Girley</a>
+  <a href="https://www.linkedin.com/in/zoe-girley-806a1a303/" style="color: #007BFF; text-decoration: underline;">Zoe Girley</a>, in collaboration with 
+  <a href="https://compression.stanford.edu/" style="color: #007BFF; text-decoration: underline;">Compression Forum</a> at Stanford University.
 </div>
 
 <div style="border-left: 6px solid #007BFF; background-color: #EAF3FF; padding: 1em; margin: 1em 0;">

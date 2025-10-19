@@ -18,7 +18,12 @@ read_time: 10
     Jump to the summary poster here.
   </a>
 </div>
-
+<div style="border-left: 6px solid #fa3a00ff; background-color: #fddfdbff; padding: 1em; margin: 1em 0;">
+  <strong>Curious about the code? </strong> 
+  <a href="https://www.github.com/alexhuang1029/SmishSmashing" style="color: #007BFF; text-decoration: underline;">
+    Access the GitHub here.
+  </a>
+</div>
 
 __"FREE MINECRAFT DOWNLOAD". "Your Car's warranty has expired." "Congratulations! You have just won a free iPhone!".__ All of these are scams that Internet users—especially those less tech-literate—often fall for.
 
@@ -40,7 +45,7 @@ Curious about the development process? Check out the embedded Notion wiki attach
 
 <h2 id="poster">Summary Poster</h2>
 <p>Presented at the 2024 SEFCOM High School Internship cumulative poster session.</p>
-<iframe width="800" height="1200" src="/images/portfolio/smishsmashing/poster.pdf" frameborder="0" ></iframe>
+<iframe width="800" height="800" src="/images/portfolio/smishsmashing/poster.pdf" frameborder="0" ></iframe>
 <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
   <a href="/images/portfolio/smishsmashing/poster.pdf" 
      target="_blank" 

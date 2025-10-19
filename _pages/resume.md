@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Resume"
-permalink: /cv/
+permalink: /resume/
 author_profile: true
 redirect_from:
   - /resume
@@ -9,6 +9,7 @@ redirect_from:
 
 {% include base_path %}
 <a href="http://alexhuang1029.github.io/files/Alex S. Huang - Resume.pdf" target="_blank">Click here for full PDF Version</a>
+
 
 Education
 ======
