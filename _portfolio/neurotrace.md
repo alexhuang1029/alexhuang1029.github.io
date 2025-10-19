@@ -8,11 +8,10 @@ read_time: 10
 
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
-  <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 
-  <a href="https://www.linkedin.com/in/zoe-girley-806a1a303/" style="color: #007BFF; text-decoration: underline;"></a>
+  <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, for the <a href="https://www.azscience.org/visit/events/arizona-science-engineering-fair-azsef/awards/" style="color: #007BFF; text-decoration: underline;">2024 Arizona Science and Engineering Fair</a> (AzSEF).
 </div>
 
-<div style="border-left: 6px solid #007BFF; background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
+<div style="border-left: 6px solid rgba(0, 123, 255, 1); background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
   <strong>TLDR (Too long, didn't/don't wanna read)?:</strong> 
   <a href="#poster" style="color: #007BFF; text-decoration: underline;">
     Jump to the summary poster here.
@@ -47,36 +46,19 @@ __1. Dataset Preparation__
       * Test 4: Tracing a small circle (3cm)
       * Test 5: Writing l's in cursive
       * Test 6: Writing la's in cursive
-    * 12 metrics out of the 18 were used to reduce the number of dimensions.
-<div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <img src="/images/portfolio/theta/fig2.png" 
-         alt="Constructed & modified" 
-         style="max-height: 400px; border-radius: 14px;">
-    <p style="font-size: 0.9em; color: #555;">Constructed & modified DexHand.</p>
-  </div>
-  <div style="text-align: center; max-width: 300px;">
-    <img src="/images/portfolio/theta/fig3.png" 
-         alt="Fingertip flexion" 
-         style="max-height: 400px; border-radius: 14px;">
-    <p style="font-size: 0.9em; color: #555;">Fingertip flexion by pulling on ligament. Sprint (tip extension) circled.</p>
-  </div>
-</div>
-* To control the DexHand: 
-    * Ubuntu VM w/ USB passthrough used as ROS2 environment.
-    * The Arduino pipeline relied on two main ROS2 nodes to faciliate robotic hand movement. 
-        * High-level commands converted into serial messages which Arduino interprets to control robotic hand servos.
+
+
 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig4.png" 
-         alt="Caption for Fig 4" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+  <div style="text-align: center; max-width: 400px;">
+    <img src="/images/portfolio/neurotrace/fig9.png" 
+         alt="Caption for Fig 10" 
+         style="max-width: 400px; border-radius: 14px; height: auto; width: 150%">
     <p style="font-size: 0.9em; color: #555;">
-      ROS 2-Arduino Joint Angle Transmission pipeline for robotic hand servos actuation.
+      The different 6 NeuroTrace tasks.
     </p>
   </div>
 </div>
-        
+  * 12 metrics out of the 18 were used to reduce the number of dimensions.  
 
 __2. Random Forest Model Training & Optimization__
 
@@ -84,153 +66,159 @@ __2. Random Forest Model Training & Optimization__
     * The Random Forest classification model was chosen since it overfits less, generalizing well to unseen data.
       * Inputs: The metrics (features) of each of the 6 tasks of a patient
       * Outputs: The classification of the patient (healthy/patient), as well as analyzable metrics which are used to tune the model's hyperparameters.
-    * RGB image capture (640x480p, 30FPS) from all three cameras (hence the triangulation) were synchronized while performing the selected hand gesture (see table). 
-      * __In total, more than 48,000 images were captured for the dataset (~1,200 images per gesture).__
-      * The corresponding joint angles were recorded, with a ±5-degree error threshold was added to account for any human error in the data collection process.
+      * 75%/25% training/testing split
+<div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/neurotrace/fig1.png" 
+         alt="Caption for Fig 1" 
+         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Hyperparameter Tuning process. 
+    </p>
+  </div>
+</div>
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/neurotrace/fig2.png" 
+         alt="Caption for Fig 2" 
+         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Performance metrics vs. parameters (# of features & max depth). The 5-fold CV (Cross-validation) score is highlighted, and drops after certain parameters.
+    </p>
+  </div>
+</div>
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/neurotrace/fig3.png" 
+         alt="Caption for Fig 3" 
+         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Average performance metrics and confusion matrix for trained NeuroTrace RF model.
+    </p>
+  </div>
+</div>
+  * The model has __high accuracy (90%)__ and __precision (94%)__, and __fairly good recall (84%)__, with an __F1 score__ (weighted avg. of precision/recall) of __88%__.
+  * 5-fold cross-validation score (80%) and ROC-AUC (Area under curve) score (90%) signal that __NeuroTrace generalizes well across unknown (real-life) data__.
+  * Results are statistically significant, meaning that NeuroTrace's predictions are better than random chance.
 
-      |     Gesture ID    |     Gesture Name    |     Index MCP Angle |     Index PIP Angle |     Index DIP Angle |     Middle MCP Angle |
-      |-------------------|---------------------|---------------------|---------------------|---------------------|----------------------|
-      |     1             |     Closed Fist     |     90 (±5°)        |     90 (±5°)        |     110 (±5°)       |     90 (±5°)         |
-      |     2             |     Open Palm       |     180 (±5°)       |     180 (±5°)       |     180 (±5°)       |     180 (±5°)        |
-      |     3             |     Number One      |     180 (±5°)       |     180 (±5°)       |     180 (±5°)       |     90 (±5°)         |
-      
-      <center>Example entries from dataset.</center>
+__3. NeuroTrace Frontend Development__
+* Developed portable & interactive HTML/JavaScript program that collects handwriting kinematics data (12 features) over the chosen 6 tasks.
+  * A WACOM Intuos Tablet collects handwriting data with an electronic pen.
+  * Captures pen kinematics (x, y, pressure, tilt, pen-up/pen-downs) from a calibrated WACOM tablet at 120 Hz, and exports kinematics CSV file.
+  * There is a paper pad printed with the corresponding mapped tasks (n=6) on the program. Participants traced the paper with the electronic pen, testing hand-eye coordination.
+  * The raw testing data can be found [here](https://github.com/alexhuang1029/NeuroTrace/tree/main/TestData). All participants are anonymous per signed informed consent forms.
 
+    | Time (cycle) |     Pendown |     X Position |     Y Position |     Pressure |     TiltX |     TiltY |
+    |--------------|-------------|----------------|----------------|--------------|-----------|-----------|
+    | 1            | 0           |     530        |     277        |     0.001    |     0     |     0     |
+    | 2            |     1       |     533        |     276        |     0.215    |     0     | 0         |
+    | 3            |     0       |     536        |     270        |     0.222    |     0     |     0     |
+    
+    <center>Example entries from 1 of 6 task csv files from dataset.</center>
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 400px;">
+    <img src="/images/portfolio/neurotrace/fig4.png" 
+         alt="Caption for Fig 4" 
+         style="max-width: 400px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Data collection device - WACOM Intuos Tablet (120hz).
+    </p>
+  </div>
+</div>
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 600px;">
+    <img src="/images/portfolio/neurotrace/fig5.png" 
+         alt="Caption for Fig 5" 
+         style="max-width: 600px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      NeuroTrace webpage program, with annotations on page by drawing on tablet.
+    </p>
+  </div>
+</div>
+
+* The CSV file outputted from the HTML program is processed & normalized to DARWIN dataset scaling and then analyzed by the trained NeuroTrace Random Forest model.
+  * The central difference approximation formulas for parametric/kinematics equations are below, which calculated the tested handwriting kinematics (Dividing by 120^n due to WACOM tablet operating at 120 Hz):
+
+$$\begin{align*} \small
+\text{avg. speed} &= \small \frac{1}{n} \sum_{i=0}^{n} 
+\sqrt{(x_i - x_{i+1})^2 + (y_i - y_{i+1})^2} \\[1em]
+\small
+\text{avg. acceleration} &= \small \frac{1}{n} \sum_{i=0}^{n} 
+\frac{\sqrt{(x_{i+1} - 2x_i + x_{i-1})^2 + (y_{i+1} - 2y_i + y_{i-1})^2}}{120} \\[1em]
+\small
+\text{avg. jerk} &= \small \frac{1}{n} \sum_{i=0}^{n} 
+\frac{\sqrt{(x_{i+2} - 3x_{i+1} + 3x_i - x_{i-1})^2 + (y_{i+2} - 3y_{i+1} + 3y_i - y_{i-1})^2}}{120^2}
+\end{align*}$$
+
+__4. Real-life NeuroTrace Prototype Testing & Data Analysis__
+
+* Randomly recruited seniors (n=18, mean age=80) from nearby senior facilities (Chandler & Gilbert, Arizona) participated in NeuroTrace testing
+  * All subjects signed informed consent forms explaining purpose of study and data protection policies.
+* Subjects completed two tasks, in about 10 minutes: 
+  1. Completed quick demographics survey bout subjects' history neurodegenerative diseases and their educational & vocational (job) history.
+    * __This survey was used to determine if subjects were positive _(Patient)_ or negative _(Control)_ ground truth for data collection.__
+  2. Utilized the calibrated WACOM tablet, digital pen, and software to complete the 6 NeuroTrace tracing tasks.
 <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
   <div style="text-align: center;">
-    <img src="/images/portfolio/theta/fig5.png" 
-         alt="Constructed & modified" 
-         style="max-height: 300px; border-radius: 14px;">
-    <p style="font-size: 0.9em; color: #555;">Joint data collection diagram.</p>
+    <img src="/images/portfolio/neurotrace/fig6.png" 
+         alt="WACOM" 
+         style="max-height: 200px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Participant completeing vertical dots task</p>
   </div>
-  <div style="text-align: center;">
-    <img src="/images/portfolio/theta/fig6.png" 
-         alt="Fingertip flexion" 
-         style="max-height: 300px; border-radius: 14px;">
-    <p style="font-size: 0.9em; color: #555;">Triangulation (multi-view) data collection setup.</p>
-  </div>
-</div>
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig7.png" 
-         alt="Caption for Fig 7" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
-    <p style="font-size: 0.9em; color: #555;">
-      Triangulated, synchronized RGB images captured from webcams (right, left, and front). 
-    </p>
+  <div style="text-align: center; max-width: 340px;">
+    <img src="/images/portfolio/neurotrace/fig7.png" 
+         alt="Program" 
+         style="max-height: 400px; border-radius: 14px;">
+    <p style="font-size: 0.9em; color: #555;">Different participant completing cursive 'l' task.</p>
   </div>
 </div>
-  * This same triangulation setup (see specific measurements above) is how the pipeline works in real-time inference.
-    * __The hand input will be "scanned" by the three cameras simultaneously, and the 15x1 angle vector that is outputted from the CNN model will be fed into the robotic hand, enabling real-time teleoperation.__
 
-__3. Segmentation Preprocessing & THETA Joint Angle Classification__
-* The images are first __segmented__ (hand is cut out from the background) through the following process:
-  * Images are preprocessed:
-    * Resized to 224×224 to reduce size (Input tensor is a 224×224×3 vector).
-    * Pixel values are normalized.
-  * Image features are extracted, linked to angle vectors:
-    * Image passed through DeepLabV3 with the ResNet-50 backbone. 
-      * DeepLabV3 is a __semantic segmentation network__, which classifies every pixel in an image as a category (like "dog", "sky", etc).
-      * ResNet-50 is a (lightweight) __pretrained deep residual network__ with 50 layers (hence the name), which processes the input image to produce feature mappings to that image's corresponding angle vectors.
-      * Atrous-Spatial Pyramid Pooling is applied to extract features between multiple layers/pixels.
-      * [Curious why we chose DeepLabV3 with ResNet-50?](https://docs.google.com/document/d/1sj1Y-YGme6bJ7TUa-s7DHwr22o6JEYRSMdulSoXbk1k/edit?usp=sharing)
-  * Segmentation of the hand is predicted:
-    * Masks (region of hand) optimized with BCEWithLogitsLoss
-    * Erosion/dilation image touchups added for the removal of noise.
-    * __The hand is segmented in red!__ (All the red in the original RGB images are masked over with blue to prevent unintended red masks in the images)
 
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig8.png" 
-         alt="Caption for Fig 8" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2em; flex-wrap: wrap; text-align: center;">
+  <div style="flex: 1 1 350px; max-width: 330px;">
+    <img src="/images/portfolio/neurotrace/fig8.png" 
+         alt="WACOM" 
+         style="width: 100%; height: auto; border-radius: 14px;">
     <p style="font-size: 0.9em; color: #555;">
-      End-to-end segmentation pipeline. 
+      Data collection WACOM tablet, set up w/ tracing assignment. The subject traces the ring with the pen, which is recorded on the NeuroTrace software.
     </p>
   </div>
 
-</div>
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig9.png" 
-         alt="Caption for Fig 9" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+  <div style="flex: 1 1 300px; max-width: 340px;">
+    <img src="/images/portfolio/neurotrace/fig9.png" 
+         alt="Program" 
+         style="width: 100%; height: auto; border-radius: 14px;">
     <p style="font-size: 0.9em; color: #555;">
-      Red masks segmentating the hand, across triangulated views. 
+      Each of the 6 NeuroTrace tasks for subjects to trace.
     </p>
   </div>
 </div>
-__4. THETA Joint Angle Prediction, Real-Time Inference, & Results__
-
-* After segmentation, the masked images are HSV processed (background = black, hand = red), and passed through a convolutional neural network (CNN), __MobileNetV2__.
-  * During model training:
-    * Joint angles are binned 1-9, where:
-      * 1 corresponds to 80-90 degrees (our defined threshold of the smallest angle a finger joint is able to make)
-      * 2 corresponds to 90-100 degrees... etc
-      * 9 corresponds to 170-180 degrees (our defined threshold of the largest angle a finger joint is able to make)
-    * Input data (multi-view HSV images) are classified into one of the 9 bins
-    * Training is optimized:
-      * Focal Loss (γ = 2.0)
-      * Adam (LR = 0.001)
-      * Trained on 10 epochs.
-    * Last layer is modified: 
-      * Reshaped to (batch, 15, 10)
-      * T = 2.0 scaling
-      * Softmax
-
+  * __Data Analysis__
+    * According to the confusion matrix for participant testing, the model was __88% accurate__ at identifying positives and negatives for neurodegenerative diseases (Alzheimer's, Parkinson's, MS, etc), with an __80% F1 score__.
+    * __This proves that a distinct difference between healthy control subjects' and patients' subjects handwriting kinematic exists.__
+      * Limitations: statistics based on very limited sample size (n=18), needs additional testing.
 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig10.png" 
-         alt="Caption for Fig 10" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
+  <div style="text-align: center; max-width: 300px;">
+    <img src="/images/portfolio/neurotrace/fig10.png" 
+         alt="Caption for Fig 4" 
+         style="max-width: 300px; border-radius: 14px; height: auto; width: 150%">
     <p style="font-size: 0.9em; color: #555;">
-      MobileNetV2 Inputs: 224×224×3 HSV image, angle vectors. 
-    </p>
-  </div>
-
-</div>
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig12.png" 
-         alt="Caption for Fig 11" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
-  </div>
-</div>
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig13.png" 
-         alt="Caption for Fig 11" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
-    <p style="font-size: 0.9em; color: #555;">
-      High training and validation accuracy with loss convergence to 0.0001, demonstrating strong generalization, minimal overfitting, and reliable joint angle classification.
-    </p>
-  </div>
-</div>
-* Overall, the CNN network was fairly accurate, with a __97.18%__ accuracy on the testing set, demonstrating high potential for strong generalization in predicting joint angles given multi-view images.
-  * Other important metrics:
-    * F1 score: 0.9274
-    * Precision: 0.8906
-    * Recall: 0.9872
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center; max-width: 800px;">
-    <img src="/images/portfolio/theta/fig14.png" 
-         alt="Caption for Fig 14" 
-         style="max-width: 700px; border-radius: 14px; height: auto; width: 150%">
-    <p style="font-size: 0.9em; color: #555;">
-      Important metrics for MobileNetV2 model.
+      Confusion matrix for NeuroTrace model evaluation (n=18).
     </p>
   </div>
 </div>
 
-<div style="text-align: center; margin: 1.5em 0;">
-  <img src="/images/portfolio/theta/demo.gif" 
-       alt="THETA pipeline demo" 
-       style="width: 80%; max-width: 800px; border-radius: 10px;">
-  <p style="font-size: 0.9em; color: #555;">THETA pipeline demo
-  <a href="https://imgflip.com/gif/a8uivn">(GIF not playing?)</a>
-  </p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 400px;">
+    <img src="/images/portfolio/neurotrace/fig11.png" 
+         alt="Caption for Fig 4" 
+         style="max-width: 400px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      NeuroTrace training and real-life testing accuracy metrics.
+    </p>
+  </div>
 </div>
-
 Conclusion
 ---
 __NeuroTrace ensures early neurodegenerative disease detection with a 80%+ accuracy. NeuroTrace ultimately will create a future where the burden of neurodegenerative diseases is alleviated, with implications and applications:__
@@ -247,13 +235,11 @@ As with any good project, there is future research planned:
 * __Longitudinal Tracking:__ Utilize NeuroTrace regularly long-term as a checkup tool through repeated handwriting sessions.
 * __Clinical Integration:__ Partner with neurology labs to deploy NeuroTrace as a pre-diagnostic screening application.
 
----
-
-<h2 id="poster">Summary Poster</h2>
-<p>Presented at the 2024 SEFCOM High School Internship cumulative poster session.</p>
-<iframe width="800" height="1200" src="/images/portfolio/smishsmashing/poster.pdf" frameborder="0" ></iframe>
+<h2 id="poster2">Summary Poster</h2>
+<p>Presented at the 2024 Arizona Science and Engineering Fair, placing 3rd for the Translational Medical Sciences category.</p>
+<iframe width="800" height="1200" src="/images/portfolio/neurotrace/poster.pdf" frameborder="0" ></iframe>
 <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
-  <a href="/images/portfolio/smishsmashing/poster.pdf" 
+  <a href="/images/portfolio/neurotrace/poster.pdf" 
      target="_blank" 
      style="color: #007BFF; text-decoration: underline;">
     Open PDF in a separate window
