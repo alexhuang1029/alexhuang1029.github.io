@@ -16,6 +16,8 @@ Some academic interests of mine are applied AI/ML research for robotics,  FIRST 
 
 In my free time, I love to hike, travel, cook, and play piano/violin/guitar. 
 
+__Check out my projects below by clicking on the picture, or use the header to navigate the site.__
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
