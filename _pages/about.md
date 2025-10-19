@@ -38,6 +38,7 @@ In my free time, I love to hike, travel, cook, and play piano/violin/guitar.
 
     .slideshow-container {
       max-width: 500px;
+      max-height: 500px;
       width: 100%;
       background-color: #000;
       border-radius: 10px;
@@ -139,38 +140,38 @@ In my free time, I love to hike, travel, cook, and play piano/violin/guitar.
 <body>
   <div class="slideshow-container">
     <div class="slide active">
-      <a href="https://example.com/1" target="_blank">
-        <img src="images/portfolio/theta/logo.png" alt="Slide 1">
+      <a href="/portfolio/theta">
+        <img src="images/portfolio/theta/fig2.png" alt="Slide 1">
       </a>
     </div>
 
     <div class="slide">
-      <a href="https://example.com/2" target="_blank">
-        <img src="images/portfolio/smishsmashing/logo.png" alt="Slide 2">
+      <a href="/portfolio/koch">
+        <img src="images/portfolio/koch/logo.png" alt="Slide 2">
       </a>
     </div>
 
     <div class="slide">
-      <a href="https://example.com/3" target="_blank">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=400&fit=crop" alt="Slide 3">
+      <a href="/portfolio/smishsmashing">
+        <img src="images/portfolio/smishsmashing/fig1.png" alt="Slide 3">
       </a>
     </div>
 
     <div class="slide">
-      <a href="https://example.com/4" target="_blank">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&h=400&fit=crop" alt="Slide 4">
+      <a href="/portfolio/neurotrace">
+        <img src="images/portfolio/neurotrace/fig5.png" alt="Slide 4">
       </a>
     </div>
 
     <div class="slide">
-      <a href="https://example.com/5" target="_blank">
-        <img src="https://images.unsplash.com/photo-1499209974519-9f2e954ed288?w=700&h=400&fit=crop" alt="Slide 5">
+      <a href="/portfolio/shtem">
+        <img src="images/portfolio/shtem/logo.png" alt="Slide 5">
       </a>
     </div>
 
     <div class="slide">
-      <a href="https://example.com/6" target="_blank">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=700&h=400&fit=crop" alt="Slide 6">
+      <a href="/posts/2024/09/blog-post-1/">
+        <img src="/images/portfolio/microbots/logo.jpeg" alt="Slide 6">
       </a>
     </div>
 
@@ -218,7 +219,6 @@ In my free time, I love to hike, travel, cook, and play piano/violin/guitar.
     }, 4000);
   </script>
 </body>
-</html>
 
 {% comment %}
 

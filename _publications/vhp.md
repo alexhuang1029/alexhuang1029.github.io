@@ -38,3 +38,15 @@ __❤️🕊 Rest in peace Lee 🕊❤️__
     Open YouTube player in a separate window
   </a>
 <br>
+<br>
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 400px;">
+    <img src="/images/portfolio/vhp/logo.png" 
+         alt="Caption for Fig 4" 
+         style="max-width: 400px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Selfie!
+    </p>
+  </div>
+</div>
