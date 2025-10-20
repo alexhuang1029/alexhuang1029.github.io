@@ -239,7 +239,7 @@ As with any good project, there is future research planned:
 * __Longitudinal Tracking:__ Utilize NeuroTrace regularly long-term as a checkup tool through repeated handwriting sessions.
 * __Clinical Integration:__ Partner with neurology labs to deploy NeuroTrace as a pre-diagnostic screening application.
 
-<h2 id="poster2">Summary Poster</h2>
+<h2 id="poster">Summary Poster</h2>
 <p>Presented at the 2024 Arizona Science and Engineering Fair, placing 3rd for the Translational Medical Sciences category.</p>
 <iframe width="800" height="1200" src="/images/portfolio/neurotrace/poster.pdf" frameborder="0" ></iframe>
 <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
