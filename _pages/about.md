@@ -191,16 +191,14 @@ __Check out my projects below by clicking on the picture, or use the header to n
   </div>
 
   <script>
+  document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
 
     function showSlide(index) {
-      // Remove active class from all slides and dots
       slides.forEach(slide => slide.classList.remove('active'));
       dots.forEach(dot => dot.classList.remove('active'));
-
-      // Add active class to current slide and dot
       slides[index].classList.add('active');
       dots[index].classList.add('active');
     }
@@ -215,11 +213,16 @@ __Check out my projects below by clicking on the picture, or use the header to n
       showSlide(currentIndex);
     }
 
+    // Event listeners for buttons
+    document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
+    document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+
     // Auto-advance slides every 4 seconds
     setInterval(() => {
       changeSlide(1);
     }, 4000);
-  </script>
+  });
+</script>
 </body>
 
 {% comment %}
