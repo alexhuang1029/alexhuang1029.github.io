@@ -5,13 +5,17 @@ excerpt: "Could this be the 'write' approach?<br/><img src='/images/portfolio/ne
 collection: portfolio
 read_time: 10
 ---
+<div style="border-left: 6px solid #7e7e7eff; background-color: #f1f1f1ff; padding: 1em; margin: 1em 0;">
+  <strong>Read my paper</strong> 
+  <a href="/publication/neurotrace" style="color: #007BFF; text-decoration: underline;">here.</a>
+</div>
 
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, for the <a href="https://www.azscience.org/visit/events/arizona-science-engineering-fair-azsef/awards/" style="color: #007BFF; text-decoration: underline;">2024 Arizona Science and Engineering Fair</a> (AzSEF).
 </div>
 
-<div style="border-left: 6px solid rgba(0, 123, 255, 1); background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
+<div style="border-left: 6px solid #007bffff; background-color: #EAF3FF; padding: 1em; margin: 1em 0;">
   <strong>TLDR (Too long, didn't/don't wanna read)?:</strong> 
   <a href="#poster" style="color: #007BFF; text-decoration: underline;">
     Jump to the summary poster here.

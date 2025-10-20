@@ -5,6 +5,11 @@ excerpt: "Who knows when it'll come in 'handy'?<br/><img src='/images/portfolio/
 collection: portfolio
 read_time: 10
 ---
+
+<div style="border-left: 6px solid #7e7e7eff; background-color: #f1f1f1ff; padding: 1em; margin: 1em 0;">
+  <strong>Read my publication</strong> 
+  <a href="/publication/theta" style="color: #007BFF; text-decoration: underline;">here.</a>
+</div>
 <div style="border-left: 6px solid #FFC107; background-color: #FFF8E1; padding: 1em; margin: 1em 0;">
   <strong>Authors:</strong> 
   <a href="https://alexhuang1029.github.io" style="color: #007BFF; text-decoration: underline;">Alex Huang</a>, 

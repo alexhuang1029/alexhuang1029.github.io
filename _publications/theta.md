@@ -6,7 +6,7 @@ excerpt: 'Utilizing multi-view image segmentation and machine-learning classific
 date: 2025-10-22
 venue: 'IEEE 11th International Conference on Engineering and Emerging Technologies (ICEET)'
 paperurl: 'http://alexhuang1029.github.io/files/THETA_IEEE.pdf'
-citation: 'A. Huang and A. Karthik, Akshay, "THETA: Triangulated Hand-State Estimation for Teleoperation and Automation in Robotic Hand Control," <i>2025 International Conference on Engineering and Emerging Technologies (ICEET)</i>, Kuala Lumpur, Malaysia, 2025, pp.1-6, doi: TBA.'
+citation: 'A. Huang and A. Karthik, "THETA: Triangulated Hand-State Estimation for Teleoperation and Automation in Robotic Hand Control," <i>2025 International Conference on Engineering and Emerging Technologies (ICEET)</i>, Kuala Lumpur, Malaysia, 2025, pp.1-6, doi: TBA.'
 ---
 __Published October 22, 2025__
 
