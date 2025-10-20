@@ -18,7 +18,6 @@ In my free time, I love to hike, travel, cook, and play piano/violin/guitar.
 
 __Check out my projects below by clicking on the picture, or use the header to navigate the site.__
 
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Picture Slideshow</title>
@@ -138,8 +137,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
       background-color: #ccc;
     }
   </style>
-</head>
-<body>
+
   <div class="slideshow-container">
     <div class="slide active">
       <a href="/portfolio/theta">
@@ -147,47 +145,47 @@ __Check out my projects below by clicking on the picture, or use the header to n
       </a>
     </div>
 
-    <div class="slide">
-      <a href="/portfolio/koch">
-        <img src="images/portfolio/koch/logo.png" alt="Slide 2">
-      </a>
-    </div>
+  <div class="slide">
+    <a href="/portfolio/koch">
+      <img src="images/portfolio/koch/logo.png" alt="Slide 2">
+    </a>
+  </div>
 
-    <div class="slide">
-      <a href="/portfolio/smishsmashing">
-        <img src="images/portfolio/smishsmashing/fig1.png" alt="Slide 3">
-      </a>
-    </div>
+  <div class="slide">
+    <a href="/portfolio/smishsmashing">
+      <img src="images/portfolio/smishsmashing/fig1.png" alt="Slide 3">
+    </a>
+  </div>
 
-    <div class="slide">
-      <a href="/portfolio/neurotrace">
-        <img src="images/portfolio/neurotrace/fig5.png" alt="Slide 4">
-      </a>
-    </div>
+  <div class="slide">
+    <a href="/portfolio/neurotrace">
+      <img src="images/portfolio/neurotrace/fig5.png" alt="Slide 4">
+    </a>
+  </div>
 
-    <div class="slide">
-      <a href="/portfolio/shtem">
-        <img src="images/portfolio/shtem/logo.png" alt="Slide 5">
-      </a>
-    </div>
+  <div class="slide">
+    <a href="/portfolio/shtem">
+      <img src="images/portfolio/shtem/logo.png" alt="Slide 5">
+    </a>
+  </div>
 
-    <div class="slide">
-      <a href="/posts/2024/09/blog-post-1/">
-        <img src="/images/portfolio/microbots/logo.jpeg" alt="Slide 6">
-      </a>
-    </div>
+  <div class="slide">
+    <a href="/posts/2024/09/blog-post-1/">
+      <img src="/images/portfolio/microbots/logo.jpeg" alt="Slide 6">
+    </a>
+  </div>
 
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
 
-    <div class="dots-container">
-      <span class="dot active" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
+  <div class="dots-container">
+    <span class="dot active" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
   </div>
 
   <script>
@@ -225,7 +223,6 @@ __Check out my projects below by clicking on the picture, or use the header to n
     setInterval(() => window.changeSlide(1), 4000);
   });
 </script>
-</body>
 
 {% comment %}
 
