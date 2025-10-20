@@ -34,7 +34,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
       align-items: center;
       min-height: 100vh;
       background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif;  
     }
 
     .slideshow-container {
@@ -188,6 +188,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
   </div>
   </div>
 
+{% raw %}
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
@@ -223,6 +224,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
     setInterval(() => window.changeSlide(1), 4000);
   });
 </script>
+{% endraw %}
 
 {% comment %}
 
