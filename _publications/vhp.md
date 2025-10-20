@@ -1,7 +1,7 @@
 ---
 title: "A Fighter’s Spirit: Overcoming the Arena of Life - Elmer L. Mayberry Jr. (1934-2025)"
 collection: publications
-permalink: /publication/shtem
+permalink: /publication/vhp
 excerpt: "A biography and tribute to Air Force Master Sergeant Elmer \"Lee\" Mayberry, the most awesome 91-year old I had the chance to befriend during my time working at the Ocotillo Gardens senior home. Interviewed & submitted with the [Imprints of Honor](https://www.imprintsofhonor.org/) (previously Veterans' Heritage Project) 2025 chapter at Hamilton High School."
 date: 2025-02-20
 venue: 'Since You Asked XXI - Edition 1, Library of Congress'

@@ -18,6 +18,11 @@ In my free time, I love to hike, travel, cook, and play piano/violin/guitar.
 
 __Check out my projects below by clicking on the picture, or use the header to navigate the site.__
 
+<div style="border-left: 6px solid #52adc8; background-color: #cbe0e7ff; padding: 1em; margin: 1em 0;">
+  <strong> 
+  <a href="/publication/vhp" style="color: #2675c8ff; text-decoration: underline;">Or, want to read a really cool story?</a></strong>
+</div>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Picture Slideshow</title>
