@@ -241,7 +241,7 @@ As with any good project, there is future research planned:
 
 <h2 id="poster">Summary Poster</h2>
 <p>Presented at the 2024 Arizona Science and Engineering Fair, placing 3rd for the Translational Medical Sciences category.</p>
-<iframe width="800" height="1200" src="/images/portfolio/neurotrace/poster.pdf" frameborder="0" ></iframe>
+<iframe width="800" height="600" src="/images/portfolio/neurotrace/poster.pdf" frameborder="0" ></iframe>
 <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
   <a href="/images/portfolio/neurotrace/poster.pdf" 
      target="_blank" 
