@@ -10,7 +10,7 @@ citation: 'Huang, Alex, &quot;A Fighter’s Spirit: Overcoming the Arena of Life
 ---
 __Published February 20, 2025__
 
-Master Sergeant Mayberry's Veteran Archive can be found [here in the Library of Congress.](https://www.loc.gov/item/afc2001001.130103/#item-service_history). 
+Master Sergeant Mayberry's Veteran Archive can be found [here in the Library of Congress.](https://www.loc.gov/item/afc2001001.130103/). 
 
 __❤️🕊 Rest in peace Lee 🕊❤️__
 
@@ -32,7 +32,7 @@ __❤️🕊 Rest in peace Lee 🕊❤️__
 <p>Interview portion submitted also into the Library of Congress. The interview is long, but well worth a listen! He has hilarious stories about his time serving all around the world.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7pLjbCdrU8E?si=N_Lap1St9dAZnmZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p style="font-size: 0.9em; color: #555; text-align: center; margin-top: 0.5em;">
-  <a href="https://youtu.be/ky7LpNgwXBc?si=7XxHJ3rjiP6DHzyG" 
+  <a href="https://www.youtube.com/watch?v=7pLjbCdrU8E" 
      target="_blank" 
      style="color: #007BFF; text-decoration: underline;">
     Open YouTube player in a separate window
