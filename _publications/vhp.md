@@ -10,7 +10,7 @@ citation: 'Huang, Alex, &quot;A Fighter’s Spirit: Overcoming the Arena of Life
 ---
 __Published February 20, 2025__
 
-Master Sergeant Mayberry's Veteran Archive can be found [here in the Library of Congress.](https://www.loc.gov/item/afc2001001.130103/#item-service_history). 
+Master Sergeant Mayberry's Veteran Archive can be found [here in the Library of Congress.](https://www.loc.gov/item/afc2001001.130103/). 
 
 __❤️🕊 Rest in peace Lee 🕊❤️__
 

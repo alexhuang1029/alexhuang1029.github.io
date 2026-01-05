@@ -1,5 +1,5 @@
 ---
-title: "Improving the Zero-Shot Generalizability of Vision-Language-Action models with Kochv1.1 and SO-101 Grippers"
+title: "VLA-Replica: A Replicable Benchmark for Evaluating Robotics Vision-Language Action Models with the SO-101 Robotic Gripper"
 date: "October 1, 2025"
 excerpt: "What I'm currently working on...<br/><img src='/images/portfolio/koch/logo.png' width='350px' style='border-radius: 14px;'>"
 collection: portfolio
@@ -32,9 +32,37 @@ This project aims to explore how we can improve the generalization ability of po
 
 10-1-25: Installed LeRobot, conda, and necesary packages for calibration and motor setup.
 
-10-8-25: Successfully set up teleoperation and cable management. 
+10-8-25: Successfully set up teleoperation and cable management for Koch v1.1 bimanual grippers. 
 
 10-17-25: Working on implementing OpenCV for AprilTag detection (transformation matrices determination) first, and then image collection for the imitation learning.
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/koch/fig2.png" 
+         alt="AprilTag Distance Estimation" 
+         style="max-width: 500px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      AprilTag Distance Estimation.
+    </p>
+  </div>
+</div>
+
+11-9-25: Set up teleoperation and cable management for SO-101 robotic gripper. It's a lot more powerful than the Koch, and has wider range of motion for more complex tasks!
+
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <div style="text-align: center; max-width: 800px;">
+    <img src="/images/portfolio/koch/fig1.png" 
+         alt="Current workspace setup" 
+         style="max-width: 300px; border-radius: 14px; height: auto; width: 150%">
+    <p style="font-size: 0.9em; color: #555;">
+      Current setup for data collection.
+    </p>
+  </div>
+</div>
+
+11-15-25: Submitted [URSA 2025](https://oue.utdallas.edu/research/undergraduate-research-scholar-awards/) proposal. 
+
+12-1-25: Submitted optimal, suboptimal, and failure trajectories to the [Reward-FM dataset](https://huggingface.co/spaces/rewardfm/visualizer) (to see dataset, scroll down to *aliangdw/utd_so101_policy_ranking*).
 
 <!--
 <div style="display: flex; justify-content: center; width: 100%;">
@@ -295,5 +323,9 @@ As with any good project, there is future research planned:
 
 <h2 id="video">Quick Video Summary</h2>
 <p>Regular updates will be posted here.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1ZQ1RxclH0c?si=o5BZBvJx8YFQm3pP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
 
 <iframe width="100" height="100" src="https://www.youtube.com/embed/46fAbrpgdsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
