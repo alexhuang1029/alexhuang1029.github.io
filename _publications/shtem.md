@@ -2,14 +2,28 @@
 title: "Optimizing Large Language Models: Learning from Mistakes in Gameplay"
 collection: publications
 permalink: /publication/shtem
+authors:
+  - name: "Alex S. Huang"
 excerpt: 'Increasing the "reasoning" abilities of large-language models to complete simple logic games like tic-tac-toe'
 date: 2024-08-15
 venue: 'STEM2SHTEM Journal'
 slidesurl: 'http://alexhuang1029.github.io/files/SHTEM_Slides.pdf'
 paperurl: 'http://alexhuang1029.github.io/files/SHTEM_Paper.pdf'
-citation: 'Huang, Alex et al. (2024) &quot;Optimizing Large Language Models: Learning from Mistakes in Gameplay.&quot; <i>2024 STEM2SHTEM Journal</i>.'
+arxivurl:
+websiteurl:
+codeurl:
+bibtex: |
+  @article{huang2024shtem,
+    title   = {Optimizing Large Language Models: Learning from Mistakes in Gameplay},
+    author  = {Huang, Alex and others},
+    journal = {STEM2SHTEM Journal},
+    year    = {2024},
+    url     = {http://alexhuang1029.github.io/publication/shtem}
+  }
 ---
 __Published August 15, 2024__
+<h2 id="bibtex">BibTeX</h2>
+<pre><code>{{ page.bibtex | escape }}</code></pre>
 <h2 id="paper">Paper Preview</h2>
 <p>2024 STEM2SHTEM Summer Internship final paper and presentation.</p>
 <iframe width="800" height="800" src="/files/SHTEM_Paper.pdf" frameborder="0" ></iframe>

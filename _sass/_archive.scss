@@ -25,6 +25,16 @@
       }
     }
   }
+
+  /* Author links in archive/list view: blue color, no underline */
+  .archive__item-authors {
+    a {
+      color: $link-color;
+      text-decoration: none;
+      &:hover { text-decoration: none; color: $link-color-hover; }
+    }
+    .author-marker { font-size: 0.7em; }
+  }
 }
 
 .archive__subtitle {

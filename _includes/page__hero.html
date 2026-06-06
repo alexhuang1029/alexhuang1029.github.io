@@ -39,6 +39,13 @@
       {% if page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
+      {% if page.collection == 'publications' and page.authors %}
+        <p class="page__authors" style="margin-top: 0.5em; font-size: smaller;">
+          {% for author in page.authors %}
+            {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.marker %}<sup class="author-marker">{{ author.marker }}</sup>{% endif %}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </p>
+      {% endif %}
       {% if site.read_time and page.read_time %}
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}

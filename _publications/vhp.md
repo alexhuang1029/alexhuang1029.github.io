@@ -2,11 +2,23 @@
 title: "A Fighter’s Spirit: Overcoming the Arena of Life - Elmer L. Mayberry Jr. (1934-2025)"
 collection: publications
 permalink: /publication/vhp
+authors:
+  - name: "Alex S. Huang"
 excerpt: "A biography and tribute to Air Force Master Sergeant Elmer \"Lee\" Mayberry, the most awesome 91-year old I had the chance to befriend during my time working at the Ocotillo Gardens senior home. Interviewed & submitted with the [Imprints of Honor](https://www.imprintsofhonor.org/) (previously Veterans' Heritage Project) 2025 chapter at Hamilton High School."
 date: 2025-02-20
 venue: 'Since You Asked XXI - Edition 1, Library of Congress'
 paperurl: 'http://alexhuang1029.github.io/files/VHP_ELM.pdf'
-citation: 'Huang, Alex, &quot;A Fighter’s Spirit: Overcoming the Arena of Life.&quot; <i>2025 Since You Asked XXI - Edition 1, Library of Congress</i>.'
+arxivurl:
+websiteurl: 'https://www.loc.gov/item/afc2001001.130103/'
+codeurl:
+bibtex: |
+  @article{huang2025vhp,
+    title   = {A Fighter’s Spirit: Overcoming the Arena of Life - Elmer L. Mayberry Jr. (1934-2025)},
+    author  = {Huang, Alex},
+    journal = {Since You Asked XXI - Edition 1, Library of Congress},
+    year    = {2025},
+    url     = {https://www.loc.gov/item/afc2001001.130103/}
+  }
 ---
 __Published February 20, 2025__
 
@@ -14,6 +26,8 @@ Master Sergeant Mayberry's Veteran Archive can be found [here in the Library of 
 
 __❤️🕊 Rest in peace Lee 🕊❤️__
 
+<h2 id="bibtex">BibTeX</h2>
+<pre><code>{{ page.bibtex | escape }}</code></pre>
 <h2 id="paper">Paper Preview</h2>
 <p>Interviewed and wrote biography, submitted to the Imprints of Honor 2025 
   <a href="https://www.imprintsofhonor.org/you-asked"

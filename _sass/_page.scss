@@ -238,6 +238,16 @@
   a {
     color: inherit;
   }
+
+  /* Author links in single pages: blue color, no underline */
+  .page__authors {
+    a {
+      color: $link-color;
+      text-decoration: none;
+      &:hover { text-decoration: none; color: $link-color-hover; }
+    }
+    .author-marker { font-size: 0.7em; }
+  }
 }
 
 .page__meta-title {

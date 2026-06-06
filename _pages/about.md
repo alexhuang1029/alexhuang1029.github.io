@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! Nice to meet you!
 
-My name is Alex Huang. I am currently a freshman studying Electrical Engineering at [The University of Texas at Dallas](https://utdallas.edu) in Richardson, TX. 
+My name is Alex Huang. I am currently a sophomore studying Electrical Engineering at [The University of Texas at Dallas](https://utdallas.edu) in Richardson, TX. 
 I grew up in Taiwan before moving to the US at age 7. 
 
 Some academic interests of mine are applied AI/ML research for robotics,  FIRST Robotics, and math/engineering.
@@ -46,7 +46,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
       max-width: 500px;
       max-height: 500px;
       width: 100%;
-      background-color: #000;
+      background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       overflow: hidden;
@@ -120,7 +120,7 @@ __Check out my projects below by clicking on the picture, or use the header to n
     .dots-container {
       text-align: center;
       padding: 15px;
-      background-color: #000;
+      background-color: #fff;
     }
 
     .dot {
@@ -135,7 +135,24 @@ __Check out my projects below by clicking on the picture, or use the header to n
     }
 
     .dot.active {
-      background-color: #fff;
+      background-color: #333;
+    }
+
+    .slideshow-caption {
+      width: 100%;
+      margin-top: 12px;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: #222;
+    }
+
+    .slideshow-wrapper {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
     }
 
     .dot:hover {
@@ -143,40 +160,48 @@ __Check out my projects below by clicking on the picture, or use the header to n
     }
   </style>
 
+  <div class="slideshow-wrapper">
   <div class="slideshow-container">
-    <div class="slide active">
-      <a href="/portfolio/theta">
-        <img src="images/portfolio/theta/fig2.png" alt="Slide 1">
-      </a>
-    </div>
 
   <div class="slide">
-    <a href="/portfolio/koch">
-      <img src="images/portfolio/koch/logo.png" alt="Slide 2">
+    <a href="/portfolio/vlareplica">
+      <img src="images/portfolio/vlareplica/logo.png" alt="Slide 1">
+    </a>
+  </div>
+
+  <div class="slide">
+    <a href="/portfolio/robometer">
+      <img src="images/portfolio/robometer/logo.png" alt="Slide 3">
+    </a>
+  </div>
+
+  <div class="slide">
+    <a href="/portfolio/theta">
+      <img src="images/portfolio/theta/fig2.png" alt="Slide 4">
     </a>
   </div>
 
   <div class="slide">
     <a href="/portfolio/smishsmashing">
-      <img src="images/portfolio/smishsmashing/fig1.png" alt="Slide 3">
+      <img src="images/portfolio/smishsmashing/fig1.png" alt="Slide 4">
     </a>
   </div>
 
   <div class="slide">
     <a href="/portfolio/neurotrace">
-      <img src="images/portfolio/neurotrace/fig5.png" alt="Slide 4">
+      <img src="images/portfolio/neurotrace/fig5.png" alt="Slide 5">
     </a>
   </div>
 
   <div class="slide">
     <a href="/portfolio/shtem">
-      <img src="images/portfolio/shtem/logo.png" alt="Slide 5">
+      <img src="images/portfolio/shtem/logo.png" alt="Slide 6">
     </a>
   </div>
 
   <div class="slide">
     <a href="/posts/2024/09/blog-post-1/">
-      <img src="/images/portfolio/microbots/logo.jpeg" alt="Slide 6">
+      <img src="/images/portfolio/microbots/logo.jpeg" alt="Slide 7">
     </a>
   </div>
 
@@ -190,7 +215,13 @@ __Check out my projects below by clicking on the picture, or use the header to n
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
     <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
   </div>
+
+  </div>
+
+  <div id="slideshow-caption" class="slideshow-caption" aria-live="polite">VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models</div>
+
   </div>
 
   <script src="/assets/js/slideshow.js"></script>
