@@ -2,14 +2,28 @@
 title: "An Island of Inspiration: Taiwan’s Political Resilience and Growth"
 collection: publications
 permalink: /publication/taiwan
+authors:
+  - name: "Alex S. Huang"
 excerpt: "A deep dive into Taiwan's political growth since the Chinese Civil War, delving into the specific factors, as well as both positive and negative outcomes."
 date: 2023-05-01
 venue: 'AP Seminar IWA (Individual Written Argument), (unofficial)'
 slidesurl: 'http://alexhuang1029.github.io/files/Taiwan_IWA_Slides.pdf'
 paperurl: 'http://alexhuang1029.github.io/files/Taiwan_IWA_Paper.pdf'
-citation: 'Huang, Alex (2023) &quot;An Island of Inspiration: Taiwan’s Political Resilience and Growth.&quot; <i>2023 AP Seminar IWA</i> (unofficial).'
+arxivurl:
+websiteurl:
+codeurl:
+bibtex: |
+  @article{huang2023taiwan,
+    title   = {An Island of Inspiration: Taiwan’s Political Resilience and Growth},
+    author  = {Huang, Alex},
+    journal = {AP Seminar IWA (unofficial)},
+    year    = {2023},
+    url     = {http://alexhuang1029.github.io/publication/taiwan}
+  }
 ---
 __Published May 1, 2023__
+<h2 id="bibtex">BibTeX</h2>
+<pre><code>{{ page.bibtex | escape }}</code></pre>
 <h2 id="paper">Paper Preview</h2>
 <p>Final individual written argument (IWA) paper submitted to the AP Seminar Capstone project for evaluation and scoring. Scored a 5/5 (top 12%).</p>
 <iframe width="800" height="800" src="/files/Taiwan_IWA_Paper.pdf" frameborder="0" ></iframe>
