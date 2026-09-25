@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/vlareplica
 excerpt: "VLA-REPLICA is a low-cost (<$1100), easily reproducible real-world benchmark for evaluating VLA models. Our system provides a consistent environment for policy evaluation anywhere in the world. VLA-REPLICA includes a diverse suite of manipulation tasks and a small-scale demonstration dataset for target-domain adaptation, with real-world evaluation protocols for both in-distribution and out-of-distribution settings."
 date: 2026-05-20
-venue: "arXiv"
+venue: "Neural Information Processing Systems (NeurIPS), Evaluations & Datasets Track"
 paperurl: "http://alexhuang1029.github.io/files/VLAReplica_arXiv.pdf"
 arxivurl: "https://arxiv.org/abs/2605.20774v1"
 websiteurl: "https://irvlutd.github.io/VLAReplica/"
