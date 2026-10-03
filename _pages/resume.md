@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 <a href="http://alexhuang1029.github.io/files/Alex S. Huang - Resume.pdf" target="_blank">Resume PDF</a>
 
-<a href="http://alexhuang1029.github.io/files/Alex S. Huang - Resume.pdf" target="_blank">CV PDF</a>
+<a href="http://alexhuang1029.github.io/files/Alex S. Huang - CV.pdf" target="_blank">CV PDF</a>
 
 
 Education
